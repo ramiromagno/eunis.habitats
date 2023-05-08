@@ -1,0 +1,27 @@
+Package: eunis.habitats
+Type: Package
+Title: EUNIS Habitat Classification
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Ramiro", family = "Magno", email = "rmagno@pattern.institute",
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0001-5226-3441")),
+    person("Pattern Institute",
+    role = c("cph", "fnd"))
+    )
+Description: The EUNIS habitat classification is a comprehensive pan-European
+    system for habitat identification
+    <https://www.eea.europa.eu/data-and-maps/data/eunis-habitat-classification-1>.
+    This is an R data package providing the EUNIS classification system.
+    The classification is hierarchical and covers all types of habitats from
+    natural to artificial, from terrestrial to freshwater and marine. The
+    habitat types are identified by specific codes, names and descriptions and
+    come with schema crosswalks to other habitat typologies.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports: 
+    tibble
+Depends: 
+    R (>= 2.10)
+Roxygen: list(markdown = TRUE)

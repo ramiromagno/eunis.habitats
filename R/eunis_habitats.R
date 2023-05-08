@@ -1,0 +1,91 @@
+#' EUNIS Habitats
+#'
+#' @description
+#' A data set of the EUNIS habitats. Each row is an habitat.
+#'
+#' The EUNIS habitat classification is a comprehensive pan-European system for
+#' habitat identification. The classification is hierarchical and covers all
+#' types of habitats from natural to artificial, from terrestrial to freshwater
+#' and marine. The habitat types are identified by specific codes, names and
+#' descriptions and come with cross-walks to other habitat typologies.
+#'
+#' @details
+#' ## EUNIS 2012
+#' The full list of EUNIS habitats 2012: codes, scientific names and revised
+#' descriptions. The habitat descriptions of the EUNIS classification 2007 were
+#' revised in 2012. The 2007 habitat types were not changed in the 2012
+#' description revision which mostly replaced Palaearctic or UK Marine habitat
+#' classification codes used in habitat descriptions at levels 5 and below with
+#' their EUNIS classification equivalents. In 2019 the classification was
+#' further amended to include two new habitats of the revised Resolution 4 of
+#' Bern Convention as adopted at the 38th Standing Committee meeting, November
+#' 2018. The two habitats are G3.4G Pinus sylvestris forest on chalk in the
+#' steppe zone and X36 Depressions (pody) of the Steppe zone.
+#'
+#' ## EUNIS Marine 2019
+#' A revision of EUNIS marine habitat classification was published in 2019. From
+#' June 2021 the classification was complemented with crosswalks to Habitats
+#' Directive Annex I and to European Red List of Habitats. An updated version
+#' was published in March 2022. Users should change to the 2022 version at their
+#' earliest convenience.
+#'
+#' ## EUNIS Marine 2022
+#' The review of the marine component of the EUNIS habitat classification was
+#' initiated in 2014. Marine benthic habitats, marine pelagic and marine ice
+#' associated habitats are separated into three distinct groups, each with a
+#' separate classification structure. The first major division in the benthic
+#' marine part of the EUNIS classification is based on major biological zones
+#' (related to depth) and substrate type. Level 3 of the classification reflects
+#' the main biogeographical regions of Europe’s seas based on their distinct
+#' combinations of salinity and temperature regimes (Arctic, Baltic, Atlantic,
+#' Mediterranean and Black Sea). A first review was published in 2019 and an
+#' update to this version concerning mostly the Atlantic regional sea is
+#' available since March 2022. Crosswalks to Habitats Directive Annex I and to
+#' European Red List of Habitats are available while crosswalks to EUNIS marine
+#' habitats of version 2012 for the regional seas apart from the Atlantic need
+#' to be revisited.
+#'
+#' ## EUNIS Terrestrial 2021
+#' The review of the terrestrial component of the EUNIS habitat classification
+#' was initiated in 2015. The review concerns the groups of coastal habitats,
+#' grasslands, heathland, forest, sparsely vegetated and vegetated man-made
+#' habitats. The review was updated in January 2023 with some corrections to the
+#' existing groups and with the inclusion of wetlands and additional crosslinks.
+#' The remaining groups will be revised and published at a later stage. The
+#' classification includes cross-walks at level 3 to Habitats Directive Annex I,
+#' to European Red List of Habitats, to Bern Convention Resolution 4 habitats,
+#' to MAES and IUCN ecosystems, to Corine Land Cover classes and to the Euroveg
+#' Checklist 2016 Syntaxa. The groups of forest and heathland include also
+#' crosswalks to an earlier revision of these groups published in 2017. Habitats
+#' at level 3 are complemented with lists of characteristic species identified
+#' from the EVA database.
+#'
+#' @format A [tibble][tibble::tibble-package] of seven variables:
+#' \describe{
+#' \item{`classification`}{Classification identifier. Identifies one of the four
+#' habitat classifications.}
+#' \item{`section`}{Component of the EUNIS classification: `"marine"` or
+#' `"terrestrial"`.}
+#' \item{`version`}{Classification version.}
+#' \item{`group`}{Habitat group.}
+#' \item{`level`}{Habitat level.}
+#' \item{`code`}{Habitat code.}
+#' \item{`name`}{Habitat name.}
+#' }
+#' @examples
+#' # EUNIS 2012
+#' subset(eunis_habitats, classification == "EUNIS_2012")
+#'
+#' # EUNIS Marine 2019
+#' subset(eunis_habitats, classification == "EUNIS_M_2019")
+#'
+#' # EUNIS Marine 2022
+#' subset(eunis_habitats, classification == "EUNIS_M_2022")
+#'
+#' # EUNIS Terrestrial 2022
+#' subset(eunis_habitats, classification == "EUNIS_T_2021")
+#'
+#' @source \url{https://www.eea.europa.eu/data-and-maps/data/eunis-habitat-classification-1}
+#' @name eunis_habitats
+#' @keywords datasets
+NULL
