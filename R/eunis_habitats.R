@@ -60,7 +60,7 @@
 #' at level 3 are complemented with lists of characteristic species identified
 #' from the EVA database.
 #'
-#' @format A [tibble][tibble::tibble-package] of seven variables:
+#' @format A [tibble][tibble::tibble-package] of eight variables:
 #' \describe{
 #' \item{`classification`}{Classification identifier. Identifies one of the four
 #' habitat classifications.}
@@ -71,6 +71,7 @@
 #' \item{`level`}{Habitat level.}
 #' \item{`code`}{Habitat code.}
 #' \item{`name`}{Habitat name.}
+#' \item{`description`}{Habitat description.}
 #' }
 #' @examples
 #' # EUNIS 2012

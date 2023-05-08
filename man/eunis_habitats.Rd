@@ -4,7 +4,7 @@
 \alias{eunis_habitats}
 \title{EUNIS Habitats}
 \format{
-A \link[tibble:tibble-package]{tibble} of seven variables:
+A \link[tibble:tibble-package]{tibble} of eight variables:
 \describe{
 \item{\code{classification}}{Classification identifier. Identifies one of the four
 habitat classifications.}
@@ -15,6 +15,7 @@ habitat classifications.}
 \item{\code{level}}{Habitat level.}
 \item{\code{code}}{Habitat code.}
 \item{\code{name}}{Habitat name.}
+\item{\code{description}}{Habitat description.}
 }
 }
 \source{
