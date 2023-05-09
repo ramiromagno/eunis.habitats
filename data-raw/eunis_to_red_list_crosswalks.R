@@ -18,15 +18,14 @@ eunis_m_2019_to_rl_path <- file.path(path, eunis_m_2019_to_rl_file)
 eunis_m_2019_to_rl_raw <-
   readxl::read_xlsx(eunis_m_2019_to_rl_path,
                     sheet = "EUNIS to RL") |>
-  dplyr::select(Code, `Red List code`, `Red List code (for EEA publication)`) |>
+  dplyr::select(Code, `Red List code`) |>
   dplyr::rename(
     eunis_m_2019_code = Code,
-    rl_code = `Red List code`,
-    rl_eea_code = `Red List code (for EEA publication)`
+    rl_code = `Red List code`
   ) |>
   dplyr::mutate(dplyr::across(dplyr::where(is.character), trimws)) |>
   dplyr::group_by(eunis_m_2019_code) |>
-  dplyr::summarise(rl_code = list(rl_code), rl_eea_code = list(rl_eea_code)) |>
+  dplyr::summarise(rl_code = list(rl_code)) |>
   tidyr::drop_na(1L)
 
 eunis_m_2019_to_rl <- eunis_m_2019_to_rl_raw
@@ -46,15 +45,14 @@ eunis_m_2022_to_rl_path <- file.path(path, eunis_m_2022_to_rl_file)
 eunis_m_2022_to_rl_raw <-
   readxl::read_xlsx(eunis_m_2022_to_rl_path,
                     sheet = "EUNIS to RL") |>
-  dplyr::select(Code, `Red List code`, `Red List code (for EEA publication)`) |>
+  dplyr::select(Code, `Red List code`) |>
   dplyr::rename(
     eunis_m_2022_code = Code,
-    rl_code = `Red List code`,
-    rl_eea_code = `Red List code (for EEA publication)`
+    rl_code = `Red List code`
   ) |>
   dplyr::mutate(dplyr::across(dplyr::where(is.character), trimws)) |>
   dplyr::group_by(eunis_m_2022_code) |>
-  dplyr::summarise(rl_code = list(rl_code), rl_eea_code = list(rl_eea_code)) |>
+  dplyr::summarise(rl_code = list(rl_code)) |>
   tidyr::drop_na(1L)
 
 eunis_m_2022_to_rl <- eunis_m_2022_to_rl_raw
