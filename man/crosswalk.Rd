@@ -30,7 +30,7 @@ specific crosswalk queried, see Examples.
 Convert (crosswalk) habitat codes from, and to, the following habitat
 classification systems:
 \itemize{
-\item EUNIS habitat classification: \code{"EUNIS_2012"}, \code{"EUNIS_M_2019"}, \code{"EUNIS_M_2022"} and \code{"EUNIS_T_2021"}. See \link{eunis_habitats} for these habitat codes, names and description.
+\item EUNIS habitat classification: \code{"EUNIS_2012"}, \code{"EUNIS_M_2019"}, \code{"EUNIS_M_2022"} and \code{"EUNIS_T_2021"}. See \link{eunis_habitats} for these habitat codes, names and descriptions.
 \item European Red List of Habitats: \code{"RL"}.
 \item Habitats Directive Annex I: \code{"Annex_I"}.
 }
