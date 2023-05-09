@@ -29,6 +29,7 @@ habitat identification. The classification is hierarchical and covers all
 types of habitats from natural to artificial, from terrestrial to freshwater
 and marine. The habitat types are identified by specific codes, names and
 descriptions and come with cross-walks to other habitat typologies.
+See \code{\link[=crosswalk]{crosswalk()}} for mapping between habitat classification systems.
 }
 \details{
 \subsection{EUNIS 2012}{

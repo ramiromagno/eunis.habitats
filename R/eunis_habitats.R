@@ -8,6 +8,7 @@
 #' types of habitats from natural to artificial, from terrestrial to freshwater
 #' and marine. The habitat types are identified by specific codes, names and
 #' descriptions and come with cross-walks to other habitat typologies.
+#' See [crosswalk()] for mapping between habitat classification systems.
 #'
 #' @details
 #' ## EUNIS 2012

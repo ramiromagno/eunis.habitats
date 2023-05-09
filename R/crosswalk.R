@@ -5,7 +5,7 @@
 #' Convert (crosswalk) habitat codes from, and to, the following habitat
 #' classification systems:
 #'
-#' - EUNIS habitat classification: `"EUNIS_2012"`, `"EUNIS_M_2019"`, `"EUNIS_M_2022"` and `"EUNIS_T_2021"`.
+#' - EUNIS habitat classification: `"EUNIS_2012"`, `"EUNIS_M_2019"`, `"EUNIS_M_2022"` and `"EUNIS_T_2021"`. See [eunis_habitats] for these habitat codes, names and descriptions.
 #' - European Red List of Habitats: `"RL"`.
 #' - Habitats Directive Annex I: `"Annex_I"`.
 #'
