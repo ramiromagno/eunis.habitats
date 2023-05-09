@@ -32,7 +32,6 @@ eunis_2012_raw <-
 
 eunis_2012 <- eunis_2012_raw
 
-
 #
 # `eunis_m_2019`
 #
@@ -193,75 +192,3 @@ eunis_habitats <-
     )
   ) |>
   dplyr::select("classification", "section", "version", "group", "level", "code", "name", "description")
-
-#
-# Crosswalks
-#
-
-# EUNIS Marine 2019 to EUNIS 2012 and back
-eunis_m_2019_to_eunis_2012 <-
-  eunis_m_2019 |>
-  dplyr::select("code", "EUNIS 2012 code") |>
-  dplyr::rename(eunis_m_2019_code = code,
-                eunis_2012_code = `EUNIS 2012 code`) |>
-  dplyr::mutate(eunis_2012_code = gsub("\\s+", "", eunis_2012_code)) |>
-  dplyr::mutate(eunis_2012_code = strsplit2(eunis_2012_code, ";")) |>
-  tidyr::drop_na(1L)
-
-eunis_2012_to_eunis_m_2019 <-
-  eunis_m_2019_to_eunis_2012 |>
-  tidyr::unnest("eunis_2012_code") |>
-  dplyr::group_by(eunis_2012_code) |>
-  dplyr::summarise(eunis_m_2019_code = list(eunis_m_2019_code)) |>
-  tidyr::drop_na(1L)
-
-# EUNIS Marine 2022 to EUNIS 2012 and back
-eunis_m_2022_to_eunis_2012 <-
-  eunis_m_2022 |>
-  dplyr::select("code", "EUNIS 2012 code") |>
-  dplyr::rename(eunis_m_2022_code = code,
-                eunis_2012_code = `EUNIS 2012 code`) |>
-  dplyr::mutate(eunis_2012_code = gsub("\\s+", "", eunis_2012_code)) |>
-  dplyr::mutate(eunis_2012_code = strsplit2(eunis_2012_code, ";")) |>
-  tidyr::drop_na(1L)
-
-eunis_2012_to_eunis_m_2022 <-
-  eunis_m_2022_to_eunis_2012 |>
-  tidyr::unnest("eunis_2012_code") |>
-  dplyr::group_by(eunis_2012_code) |>
-  dplyr::summarise(eunis_m_2022_code = list(eunis_m_2022_code)) |>
-  tidyr::drop_na(1L)
-
-# EUNIS Terrestrial 2021 to EUNIS 2012 and back
-eunis_t_2021_to_eunis_2012 <-
-  eunis_t_2021 |>
-  dplyr::select("code", "EUNIS 2012 code") |>
-  dplyr::rename(eunis_t_2021_code = code,
-                eunis_2012_code = `EUNIS 2012 code`) |>
-  dplyr::mutate(eunis_2012_code = gsub("\\s+", "", eunis_2012_code)) |>
-  dplyr::mutate(eunis_2012_code = strsplit2(eunis_2012_code, ";")) |>
-  tidyr::drop_na(1L)
-
-eunis_2012_to_eunis_t_2022 <-
-  eunis_t_2021_to_eunis_2012 |>
-  tidyr::unnest("eunis_2012_code") |>
-  dplyr::group_by(eunis_2012_code) |>
-  dplyr::summarise(eunis_t_2021_code = list(eunis_t_2021_code)) |>
-  tidyr::drop_na(1L)
-
-#
-# Exported data sets: eunis_habitats
-#
-usethis::use_data(eunis_habitats, overwrite = TRUE)
-
-# Internal data sets (crosswalks)
-usethis::use_data(
-  eunis_m_2019_to_eunis_2012,
-  eunis_2012_to_eunis_m_2019,
-  eunis_m_2022_to_eunis_2012,
-  eunis_2012_to_eunis_m_2022,
-  eunis_t_2021_to_eunis_2012,
-  eunis_2012_to_eunis_t_2022,
-  internal = TRUE,
-  overwrite = TRUE
-  )

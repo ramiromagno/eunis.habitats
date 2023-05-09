@@ -1,6 +1,4 @@
-#'
-#'@export
-eunis_cross_walk <-
+eunis_crosswalk <-
   function(code,
            from = "EUNIS_2012",
            to = "EUNIS_M_2022",
