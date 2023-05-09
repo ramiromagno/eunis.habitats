@@ -4,6 +4,9 @@
 # eunis.habitats
 
 <!-- badges: start -->
+
+[![CRAN
+status](https://www.r-pkg.org/badges/version/eunis.habitats)](https://CRAN.R-project.org/package=eunis.habitats)
 <!-- badges: end -->
 
 `{eunis.habitats}` is an R data package that provides the [EUNIS Habitat
