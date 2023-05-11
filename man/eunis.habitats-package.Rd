@@ -11,9 +11,16 @@ The EUNIS habitat classification is a comprehensive pan-European system for habi
 \author{
 \strong{Maintainer}: Ramiro Magno \email{rmagno@pattern.institute} (\href{https://orcid.org/0000-0001-5226-3441}{ORCID})
 
+Authors:
+\itemize{
+  \item Pedro Monteiro \email{pmontei@ualg.pt} (\href{https://orcid.org/0000-0003-1446-8256}{ORCID})
+  \item Luís Bentes \email{lbentes@ualg.pt} (\href{https://orcid.org/0000-0001-6884-2886}{ORCID})
+}
+
 Other contributors:
 \itemize{
   \item Pattern Institute [copyright holder, funder]
+  \item CCMAR [copyright holder, funder]
 }
 
 }

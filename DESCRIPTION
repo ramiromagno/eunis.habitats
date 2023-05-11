@@ -5,7 +5,13 @@ Version: 0.1.0
 Authors@R: c(
     person(given = "Ramiro", family = "Magno", email = "rmagno@pattern.institute",
     role = c("aut", "cre"), comment = c(ORCID = "0000-0001-5226-3441")),
+    person(given = "Pedro", family = "Monteiro", email = "pmontei@ualg.pt",
+    role = "aut", comment = c(ORCID = "0000-0003-1446-8256")),
+    person(given = "Luís", family = "Bentes", email = "lbentes@ualg.pt",
+    role = "aut", comment = c(ORCID = "0000-0001-6884-2886")),
     person("Pattern Institute",
+    role = c("cph", "fnd")),
+    person("CCMAR",
     role = c("cph", "fnd"))
     )
 Description: The EUNIS habitat classification is a comprehensive pan-European
