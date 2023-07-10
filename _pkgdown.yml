@@ -19,3 +19,12 @@ authors:
   CCMAR:
     href: "https://www.ccmar.ualg.pt/"
     html: "<img src='https://rmagno.eu/eunis.habitats/reference/figures/ccmar-logotype.svg' height=24>"
+
+
+reference:
+- title: "EUNIS Dataset"
+  contents:
+  - eunis_habitats
+- title: "Crosswalks"
+  contents:
+  - crosswalk
