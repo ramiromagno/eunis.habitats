@@ -26,5 +26,6 @@ reference:
   contents:
   - eunis_habitats
 - title: "Crosswalks"
+  desc: "Convert habitat codes across EUNIS, European Red List and Habitats Directive Annex I"
   contents:
   - crosswalk
