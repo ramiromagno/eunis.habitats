@@ -8,6 +8,15 @@
 \description{
 The EUNIS habitat classification is a comprehensive pan-European system for habitat identification \url{https://www.eea.europa.eu/data-and-maps/data/eunis-habitat-classification-1}. This is an R data package providing the EUNIS classification system. The classification is hierarchical and covers all types of habitats from natural to artificial, from terrestrial to freshwater and marine. The habitat types are identified by specific codes, names and descriptions and come with schema crosswalks to other habitat typologies.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/ramiromagno/eunis.habitats}
+  \item \url{https://rmagno.eu/eunis.habitats/}
+  \item Report bugs at \url{https://github.com/ramiromagno/eunis.habitats/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Ramiro Magno \email{rmagno@pattern.institute} (\href{https://orcid.org/0000-0001-5226-3441}{ORCID})
 

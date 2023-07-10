@@ -31,3 +31,5 @@ Imports:
 Depends: 
     R (>= 2.10)
 Roxygen: list(markdown = TRUE)
+URL: https://github.com/ramiromagno/eunis.habitats, https://rmagno.eu/eunis.habitats/
+BugReports: https://github.com/ramiromagno/eunis.habitats/issues
