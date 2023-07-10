@@ -1,0 +1,21 @@
+url: https://rmagno.eu/eunis.habitats
+template:
+  bootstrap: 5
+
+home:
+  title: EUNIS Habitat Classification
+  description: EUNIS Habitats and crosswalks
+
+authors:
+  Ramiro Magno:
+    href: https://rmagno.eu/
+  Pedro Monteiro:
+    href: https://www.ccmar.ualg.pt/users/pmontei
+  Luís Bentes:
+    href: https://www.ccmar.ualg.pt/users/lbentes
+  Pattern Institute:
+    href: https://www.pattern.institute/
+    html: "<img src='https://rmagno.eu/eunis.habitats/reference/figures/pi-logotype-canonical-whole-v01.svg' height=24>"
+  CCMAR:
+    href: "https://www.ccmar.ualg.pt/"
+    html: "<img src='https://rmagno.eu/eunis.habitats/reference/figures/ccmar-logotype.svg' height=24>"
