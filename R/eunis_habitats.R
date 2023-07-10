@@ -84,7 +84,7 @@
 #' # EUNIS Marine 2022
 #' subset(eunis_habitats, classification == "EUNIS_M_2022")
 #'
-#' # EUNIS Terrestrial 2022
+#' # EUNIS Terrestrial 2021
 #' subset(eunis_habitats, classification == "EUNIS_T_2021")
 #'
 #' @source \url{https://www.eea.europa.eu/data-and-maps/data/eunis-habitat-classification-1}
