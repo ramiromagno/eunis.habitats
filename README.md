@@ -7,8 +7,6 @@
 
 [![CRAN
 status](https://www.r-pkg.org/badges/version/eunis.habitats)](https://CRAN.R-project.org/package=eunis.habitats)
-[![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 `{eunis.habitats}` is an R data package that provides the [EUNIS Habitat
@@ -16,6 +14,12 @@ Classification](https://www.eea.europa.eu/data-and-maps/data/eunis-habitat-class
 in tidy format.
 
 ## Installation
+
+Install from CRAN:
+
+``` r
+install.packages("eunis.habitats")
+```
 
 You can install the development version of `{eunis.habitats}` like so:
 
